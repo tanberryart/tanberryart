@@ -3,72 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TanBerry | Game Artist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Tanisha Berry | Game Art Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Baloo 2', cursive;
+      background-color: #fef6ec;
+      color: #3e2f2f;
+    }
+    header {
+      background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 4px dotted #d86f52;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #fff0e5;
+      padding: 1rem;
+      border-bottom: 2px dashed #d86f52;
+    }
+    nav a {
+      color: #d86f52;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      border-left: 8px solid #ff928b;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .portfolio-item {
+      background: #fff8f2;
+      border: 2px solid #ffc3a0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(216, 111, 82, 0.2);
+      transition: transform 0.3s;
+    }
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+    .portfolio-item img {
+      width: 100%;
+      display: block;
+    }
+    .portfolio-item p {
+      text-align: center;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #fff0e5;
+      color: #b06a63;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Tan Berry</h1>
-    <p>Game Artist | Low Poly & Stylized</p>
+    <h1>Tanisha Berry</h1>
+    <p>Stylized 3D Game Artist | Whimsical Worlds & Playful Props</p>
   </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a game artist who creates stylized and low-poly 3D assets. I love making quirky, vibrant, and game-ready visuals.</p>
+    <p>
+      Hi! I'm Tanisha, a 3D artist bringing charm and character into every low poly asset I create.
+      I love vibrant color palettes, soothing forms, and crafting assets that feel alive. Whether it's a cozy prop or a magical creature, I aim to make it game-ready and full of personality.
+    </p>
   </section>
-<section id="portfolio">
-  <h2>Portfolio</h2>
 
-  <div class="portfolio-section">
-    <h3>Characters</h3>
-    <div class="portfolio-grid">
-      <img src="https://via.placeholder.com/300x300?text=DerailedGirl" alt="DerailedGirl">
-      <img src="https://via.placeholder.com/300x300?text=Character+2" alt="Character 2">
-      <img src="https://via.placeholder.com/300x300?text=Character+3" alt="Character 3">
-    </div>
-  </div>
-
-  <div class="portfolio-section">
-    <h3>Props</h3>
-    <div class="portfolio-grid">
-      <img src="https://via.placeholder.com/300x300?text=Prop+1" alt="Prop 1">
-      <img src="https://via.placeholder.com/300x300?text=Prop+2" alt="Prop 2">
-      <img src="https://via.placeholder.com/300x300?text=Prop+3" alt="Prop 3">
-    </div>
-  </div>
-</section>
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Coming soon: a showcase of my latest 3D game assets!</p>
+    <h2>Selected Works</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300" alt="Whimsical Character" />
+        <p>Whimsical Character</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300" alt="Playful Prop" />
+        <p>Playful Prop</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300" alt="Fantasy Scene" />
+        <p>Fantasy Environment</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Say Hello</h2>
     <p>Email: tanberry.art@outlook.com</p>
+    <p>
+      <a href="https://www.artstation.com/" style="color:#d86f52">ArtStation</a> |
+      <a href="https://www.behance.net/" style="color:#d86f52">Behance</a> |
+      <a href="https://www.sketchfab.com/" style="color:#d86f52">Sketchfab</a>
+    </p>
   </section>
-<section id="socials">
-  <h2>Connect with Me</h2>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/ItsTanishaB" target="_blank" title="Instagram">
-      <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="Instagram" />
-    </a>
-    <a href="https://discord.com/users/LilBerry7253" target="_blank" title="Discord">
-      <img src="https://img.icons8.com/color/96/discord-logo.png" alt="Discord" />
-    </a>
-    <a href="https://twitter.com/TanishaBer6992" target="_blank" title="Twitter (X)">
-      <img src="https://img.icons8.com/ios-filled/96/x.png" alt="X (Twitter)" />
-    </a>
-    <a href="https://www.linkedin.com/in/tanisha-berry" target="_blank" title="LinkedIn">
-      <img src="https://img.icons8.com/color/96/linkedin.png" alt="LinkedIn" />
-    </a>
-    <a href="https://www.artstation.com/itsberry" target="_blank" title="ArtStation">
-      <img src="https://img.icons8.com/color/96/artstation.png" alt="ArtStation" />
-    </a>
-    <a href="https://sketchfab.com/tanishaberry" target="_blank" title="Sketchfab">
-      <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-sketchfab-a-platform-to-publish-share-discover-3d-content-logo-color-tal-revivo.png" alt="Sketchfab" />
-    </a>
-  </div>
-</section>
+
+  <footer>
+    Made with pastels, pixels, and plenty of love 💖<br/>
+    © 2025 Tanisha Berry
+  </footer>
 </body>
 </html>
